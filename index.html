@@ -220,13 +220,19 @@
 
     <div id="contact">
         <h2>Get in Touch</h2>
-        <div id="contact-form">
-            <form method="POST" action="https://formspree.io/pajakamy@email.com">
+        <div>
+            <form id="contact-form" method="POST">
                 <input type="hidden" name="_subject" value="Contact request from personal website" />
                 <input type="email" name="_replyto" placeholder="Your email" required>
+                <input type="hidden" name="_subject" value="Website contact" />
                 <textarea name="message" placeholder="Your message" required></textarea>
+                <input type="text" name="_gotcha" style="display:none" />
                 <button type="submit">Send</button>
             </form>
+            <script>
+                var contactform =  document.getElementById('contactform');
+                contactform.setAttribute('action', '//formspree.io/' + 'pajakamy' + '@' + 'yahoo' + '.' + 'co' + '.' + 'uk');
+            </script>
         </div>
         <!-- End #contact-form -->
     </div>
