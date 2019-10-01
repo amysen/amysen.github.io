@@ -9,6 +9,11 @@
     Description: This file contains all the scripts associated with the single-page
     portfolio website.
 */
+// $('document').ready(function(){
+//     var typed = new Typed('#typed',{
+//         stringsElement: '#typed-strings'
+//     })
+// });
 
 (function($) {
 
