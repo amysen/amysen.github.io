@@ -1001,7 +1001,11 @@ footer {
         display: none;
     }
 
-    .project-info {
+    .hackathon-image {
+        display: none;
+    }
+
+    .project-info, .hackathon-info {
         position: relative;
         margin: 0;
         padding: 30px 15px;
