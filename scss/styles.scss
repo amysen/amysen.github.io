@@ -1,10 +1,6 @@
 /*!
     Title: Dev Portfolio Template
-    Version: 1.2.1
-    Last Change: 08/28/2017
-    Author: Ryan Fitzgerald
     Repo: https://github.com/RyanFitzgerald/devportfolio-template
-    Issues: https://github.com/RyanFitzgerald/devportfolio-template/issues
 
     Description: This file contains all the styles associated with the page
     that don't come from third party libraries. This file gets compiled using
@@ -21,10 +17,11 @@
         6. Experience Styles
         7. Education Styles
         8. Project Styles
-        9. Skills Styles
-        10. Contact Styles
-        11. Optional Section Styles
-        12. Media Queries
+        9. Hackathon Styles
+        10. Skills Styles
+        11. Contact Styles
+        12. Optional Section Styles
+        13. Media Queries
 */
 
 /*
@@ -651,7 +648,7 @@ footer {
 }
 
 .project-image {
-    float: left;
+    float: right;
 }
 
 .project-info {
@@ -690,7 +687,49 @@ footer {
 
 /*
     -------------------------------
-    ----- 9. Skills Styles -----
+    ----- 9. Hackathon Styles -----
+    -------------------------------
+*/
+
+#hackathons {
+    padding: 50px 15px;
+    text-align: center;
+
+    h2 {
+        color: $heading;
+        margin-bottom: 50px;
+    }
+}
+
+.hackathon-image {
+    float: left;
+}
+
+.hackathon-info {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-right: 300px;
+    padding: 15px;
+
+    h3 {
+        font-size: 1.5em;
+        font-weight: 300;
+        color: $heading;
+        margin: 0 0 15px 0;
+    }
+
+    p {
+        color: $text;
+        margin: 0 0 15px 0;
+        font-size: 0.9em;
+    }
+}
+
+
+/*
+    -------------------------------
+    ----- 10. Skills Styles -----
     -------------------------------
 */
 
@@ -724,7 +763,7 @@ footer {
 
 /*
     -------------------------------
-    ----- 10. Contact Styles -----
+    ----- 11. Contact Styles -----
     -------------------------------
 */
 
@@ -789,7 +828,7 @@ footer {
 
 /*
     ---------------------------------------
-    ----- 11. Optional Section Styles -----
+    ----- 12. Optional Section Styles -----
     ---------------------------------------
 */
 
@@ -837,7 +876,7 @@ footer {
 
 /*
     -----------------------------
-    ----- 12. Media Queries -----
+    ----- 13. Media Queries -----
     -----------------------------
 */
 
