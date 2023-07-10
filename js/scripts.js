@@ -21,7 +21,7 @@
 
         $('html, body').animate({
             scrollTop: scrollDistance + 'px'
-        }, Math.abs(window.pageYOffset - $(heading).offset().top) / 1);
+        }, 1000);
 
         // Hide the menu once clicked if mobile
         if ($('header').hasClass('active')) {
@@ -33,7 +33,7 @@
     $('#to-top').click(function() {
         $('html, body').animate({
             scrollTop: 0
-        }, 500);
+        }, 1000);
     });
 
     // Scroll to first element
@@ -41,7 +41,7 @@
         var scrollDistance = $('#lead').next().offset().top;
         $('html, body').animate({
             scrollTop: scrollDistance + 'px'
-        }, 500);
+        }, 1000);
     });
 
     // Create timeline
