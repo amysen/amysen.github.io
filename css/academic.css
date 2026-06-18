@@ -717,6 +717,16 @@ footer::before {
 	#footer-inner { flex-direction: column; gap: 18px; text-align: center; }
 }
 
+/* on phones, stack publication media below the text, centered and larger */
+@media only screen and (max-width: 640px) {
+	.pub { flex-direction: column; gap: 8px; }
+	.pub-year { flex-basis: auto; }
+	.pub-demo-wrap, .pub-fig { align-self: center; margin-top: 16px; }
+	.pub-fig { width: min(100%, 286px); }
+	.pub-demo-wrap { width: 286px; height: 230px; }
+	.pub-demo { width: 230px; }
+}
+
 /* hide the mobile-close button on desktop entirely */
 @media only screen and (min-width: 861px) {
 	#mobile-menu-close { display: none !important; }
