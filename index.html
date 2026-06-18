@@ -5,384 +5,364 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="Amy Pajak - Machine Learning Engineer and Master's student at University of Pennsylvania. Previously at Meta (WhatsApp) and Goldman Sachs.">
+	<meta name="description" content="Amy Pajak - Master's student and researcher at the University of Pennsylvania. Research in continual/lifelong learning and embodied AI. Previously ML Engineer at Meta (WhatsApp) and Goldman Sachs.">
 	<meta name="author" content="Amy Pajak">
-	
+
 	<!-- Open Graph / Social Media -->
 	<meta property="og:type" content="website">
-	<meta property="og:title" content="Amy Pajak - Machine Learning Engineer">
-	<meta property="og:description" content="Machine Learning Engineer and Master's student at University of Pennsylvania. Previously at Meta (WhatsApp) and Goldman Sachs.">
+	<meta property="og:title" content="Amy Pajak - Researcher, University of Pennsylvania">
+	<meta property="og:description" content="Master's student and researcher at the University of Pennsylvania. Research in continual/lifelong learning and embodied AI. Previously at Meta (WhatsApp) and Goldman Sachs.">
 	<meta property="og:url" content="https://amypajak.com">
-	<meta property="og:image" content="https://amypajak.com/images/me.jpg">
+	<meta property="og:image" content="https://amypajak.com/images/me_spot.JPG">
 	<meta name="twitter:card" content="summary_large_image">
-	
+
 	<title>Amy Pajak</title>
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 	<link rel="icon" href="favicon.ico" type="image/x-icon">
-	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="libs/font-awesome/css/font-awesome-old.min.css">
-	<link href="css/bootstrap.min.css" rel="stylesheet">
-	<link href="css/styles.css" rel="stylesheet">
+	<link href="css/academic.css" rel="stylesheet">
 </head>
 
 <body>
-	<div id="mobile-menu-open" class="shadow-large">
+	<button id="mobile-menu-open" aria-label="Open menu">
 		<i class="fa fa-bars" aria-hidden="true"></i>
-	</div>
-	<!-- End #mobile-menu-toggle -->
+	</button>
+
 	<header>
-		<div id="mobile-menu-close">
-			<span>Close</span> <i class="fa fa-times" aria-hidden="true"></i>
+		<div id="nav-inner">
+			<div id="nav-left">
+				<!-- Spot walks on the spot, facing right into the name, then fades away -->
+				<img id="spot-nav" src="images/spot-walk.gif" alt="" aria-hidden="true">
+				<a id="nav-name" href="#lead">Amy Pajak</a>
+			</div>
+			<div id="mobile-menu-close">
+				<span>Close</span> <i class="fa fa-times" aria-hidden="true"></i>
+			</div>
+			<ul id="menu">
+				<li><a href="#research">Research</a></li>
+				<li><a href="#publications">Publications</a></li>
+				<li><a href="#experience">Experience</a></li>
+				<li><a href="#education">Education</a></li>
+				<li><a class="no-scroll" href="https://medium.com/@pajakamy" target="_blank" rel="noopener">Blog</a></li>
+				<li><a class="no-scroll" href="gallery.html">Photos</a></li>
+			</ul>
 		</div>
-		<ul id="menu" class="shadow">
-			<li>
-				<a href="#about">About</a>
-			</li>
-			<li>
-				<a href="#experience">Experience</a>
-			</li>
-			<li>
-				<a href="#education">Education</a>
-			</li>
-			<li>
-				<a href="#projects">Projects</a>
-			</li>
-			<li>
-				<a class="no-scroll" href="https://medium.com/@pajakamy">Blog</a>
-			</li>
-			<li>
-				<a class="no-scroll" href="gallery.html">Photos</a>
-			</li>
-		</ul>
 	</header>
 	<!-- End header -->
 
-
-
+	<!-- ================= Hero ================= -->
 	<div id="lead">
-		<div id="lead-content">
-			<h1>Amy Pajak</h1>
-			<br>
-
-			<div id="typed-strings">
-				<!-- <h2>print("Hello, World!")</h2> -->
-				<h2 >Machine Learning Engineer</h2>
+		<div id="lead-inner" class="wrap">
+			<div id="lead-photo-frame">
+				<img id="lead-photo" src="images/me_spot.JPG" alt="Amy Pajak">
 			</div>
-			<span id="typed" class='role-description' ></span>
-
-			<br>
-			<br>
-			<a href="https://drive.google.com/file/d/1Jq7Do_N8d0Dvvgw_URu9VO4KGo8CeJa6/view?usp=sharing" target="_blank" class="btn-rounded-white"> View CV </a>
+			<div id="lead-text">
+				<h1>Amy Pajak</h1>
+				<p id="lead-role">Master's Student &amp; Research Assistant <span class="at">·</span> GRASP Lab, University of Pennsylvania</p>
+				<p>
+					Hi! I'm Amy 👋
+					I'm a master's student in Robotics at the
+					University of Pennsylvania, supported by the
+					<a href="https://www.thouronaward.org/the-award/" target="_blank" rel="noopener noreferrer">Thouron Award</a>,
+					a full merit-based scholarship for graduate study. I'm currently working as a Research Assistant in the
+					<a href="https://www.grasp.upenn.edu/" target="_blank" rel="noopener noreferrer">GRASP Lab</a>,
+					and a member of the Lifelong Machine Learning Research Group led by <a href="https://www.seas.upenn.edu/~eeaton/" target="_blank" rel="noopener noreferrer">Eric Eaton</a> where my research centres on continual&nbsp;/&nbsp;lifelong learning and embodied AI -
+					building agents that keep learning over time and can generalize across new tasks.
+				</p>
+				<p>
+					Previously I was a Machine Learning Engineer at Meta&nbsp;(WhatsApp) and a Research Engineer
+					at Goldman&nbsp;Sachs. I hold a First-Class Honours BSc (4.0&nbsp;GPA) in Artificial
+					Intelligence and Computer Science from the University of Birmingham.
+				</p>
+				<div class="lead-links">
+					<a href="https://drive.google.com/file/d/1Jq7Do_N8d0Dvvgw_URu9VO4KGo8CeJa6/view?usp=sharing" target="_blank" rel="noopener"><i class="fa fa-file-text-o" aria-hidden="true"></i> CV</a>
+					<a href="https://scholar.google.com/citations?user=zDApYJgAAAAJ&hl=en&oi=ao" target="_blank" rel="noopener"><img src="images/google-scholar.svg" alt="" class="scholar-icon"> Scholar</a>
+					<a href="https://github.com/amysen" target="_blank" rel="noopener"><i class="fa fa-github" aria-hidden="true"></i> GitHub</a>
+					<a href="https://www.linkedin.com/in/amypajak/" target="_blank" rel="noopener"><i class="fa fa-linkedin" aria-hidden="true"></i> LinkedIn</a>
+					<a href="https://x.com/PajakAmy" target="_blank" rel="noopener"><img src="images/x-logo.svg" alt="" class="x-icon"> </a>
+				</div>
+			</div>
 		</div>
-		<!-- End #lead-content -->
-
-		<div id="lead-overlay"></div>
-
-		<div id="lead-down">
-			<span>
-				<i class="fa fa-chevron-down" aria-hidden="true"></i>
-			</span>
-		</div>
-		<!-- End #lead-down -->
 	</div>
 	<!-- End #lead -->
 
-	<div id="about">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-4">
-					<h2 class="heading">About Me</h2>
-					<img src="images/me.jpg" alt="Amy" class="img-fluid" style="width: 80%;">
-				</div>
-				<div class="col-md-8 d-flex align-items-center">
-					<p>
-						<br><br>
+	<!-- ================= Research interests ================= -->
+	<section id="research">
+		<div class="wrap">
+			<h2 class="section-title">Research Interests</h2>
+			<p>
+				I work on machine learning for agents that act in the world and keep learning over time.
+				My interests span continual&nbsp;/&nbsp;lifelong learning, reinforcement learning, and embodied AI -
+				and I enjoy turning recent research into working systems on real and simulated robots.
+			</p>
+			<ul class="research-areas">
+				<li>Continual &amp; Lifelong Learning<span>Learning over time without catastrophic forgetting.</span></li>
+				<li>Reinforcement Learning<span>Agents that learn to act from interaction and reward.</span></li>
+				<li>Embodied AI &amp; Robotics<span>Perception, reasoning, and control on real and simulated robots.</span></li>
+				<li>Agent Memory &amp; Reasoning<span>How agents store, retrieve, and reuse knowledge.</span></li>
+			</ul>
+		</div>
+	</section>
 
-						Hi, I'm Amy! <br><br>
-						I'm a master's student in Computer and Information Science at the University of Pennsylvania, supported by the <a href="https://www.thouronaward.org/the-award/" target="_blank" rel="noopener noreferrer">Thouron Award</a> - a full merit-based scholarship for graduate study. <br><br>
-						Previously, I worked as a Machine Learning Engineer at Meta (WhatsApp) and as a Research Engineer at Goldman Sachs. 
-						I earned a First-Class Honours degree (4.0 GPA) in BSc Artificial Intelligence and Computer Science from the University
-						of Birmingham in 2021. <br><br>
-						
-						My research interests include continual/lifelong learning and embodied AI.
-						<br>
-						I enjoy collaborating with researchers and engineers to bring novel ML solutions to fruition, experimenting with models and ML techniques as well as staying on top of the latest research.
+	<!-- ================= Publications ================= -->
+	<section id="publications">
+		<div class="wrap">
+			<h2 class="section-title">Publications &amp; Patents</h2>
+			<ul class="pub-list">
+				<li class="pub pub-has-demo">
+					<div class="pub-year">2026</div>
+					<div class="pub-body">
+						<p class="pub-title">Artifacts as Memory Beyond the Agent Boundary <span class="pub-badge">Accepted</span></p>
+						<p class="pub-authors">J. D. Martin, F. Mince, E. Saleh, <span class="me">A. Pajak</span></p>
+						<p class="pub-venue">Cognitive Computational Neuroscience (CCN) 2026 &mdash; poster &middot; arXiv:2604.08756</p>
+						<div class="pub-links">
+							<a href="https://arxiv.org/abs/2604.08756" target="_blank" rel="noopener">arXiv</a>
+							<a href="https://www.youtube.com/watch?v=gDo_41jD_LE" target="_blank" rel="noopener" title="Talk at the Amii AI Seminar, University of Alberta">Talk</a>
+						</div>
+					</div>
+					<div class="pub-demo-wrap">
+						<video class="pub-demo" src="images/dynamic.mp4" autoplay muted loop playsinline preload="metadata" aria-label="Demo from the paper"></video>
+					</div>
+				</li>
+				<li class="pub pub-has-demo">
+					<div class="pub-year">2025</div>
+					<div class="pub-body">
+						<p class="pub-title">Generative machine learning with retriever having reconfigurable sequence of rankers</p>
+						<p class="pub-authors">E. P. Brenner, K. Dasgupta, M. G. Hegde, <span class="me">A. F. Pajak</span>, G. N. V. de Melo, et al.</p>
+						<p class="pub-venue">US Patent 12,242,468</p>
+						<div class="pub-links">
+							<a href="https://patents.google.com/patent/US12242468B1/en" target="_blank" rel="noopener">Patent</a>
+						</div>
+					</div>
+					<a class="pub-fig" href="https://patents.google.com/patent/US12242468B1/en" target="_blank" rel="noopener" aria-label="View patent">
+						<img src="images/US12242468-20250304-D00000.png" alt="Patent figure: reconfigurable sequence of rankers pipeline" loading="lazy">
+					</a>
+				</li>
+				<li class="pub pub-has-demo">
+					<div class="pub-year">2020</div>
+					<div class="pub-body">
+						<p class="pub-title">&ldquo;Big Data is Watching You&rdquo;: Using AI to Detect and Track Infectious Disease Outbreaks <span class="pub-badge">1st Prize</span></p>
+						<p class="pub-authors"><span class="me">A. Pajak</span></p>
+						<p class="pub-venue">Poster &mdash; BCSWomen Lovelace Colloquium 2020, First Prize (sponsored by J.P.&nbsp;Morgan)</p>
+						<div class="pub-links">
+							<a href="https://drive.google.com/open?id=1oj_zr54N-2pTSJBdn_jaBOWXRzBk2vOR" target="_blank" rel="noopener">Poster</a>
+							<a href="https://bcswomenlovelace.bcs.org/?page_id=286" target="_blank" rel="noopener">Results</a>
+						</div>
+					</div>
+					<a class="pub-fig" href="https://drive.google.com/open?id=1oj_zr54N-2pTSJBdn_jaBOWXRzBk2vOR" target="_blank" rel="noopener" aria-label="View poster">
+						<img src="images/bn-big.png" alt="Bayesian network for infectious-disease biosurveillance" loading="lazy">
+					</a>
+				</li>
+			</ul>
+			<p class="pub-note">For the full and most up-to-date list, see my
+				<a href="https://scholar.google.com/citations?user=zDApYJgAAAAJ&hl=en&oi=ao" target="_blank" rel="noopener">Google Scholar profile</a>.</p>
+		</div>
+	</section>
+
+	<!-- ================= Experience ================= -->
+	<section id="experience">
+		<div class="wrap">
+			<h2 class="section-title">Experience</h2>
+
+			<div class="entry">
+				<div class="entry-date">May 2026 &ndash; Present</div>
+				<div class="entry-body">
+					<h3>University of Pennsylvania &mdash; GRASP Lab</h3> <span class="role">&mdash; Research Assistant</span>
+					<p>
+						Robotics research in the <a href="https://www.grasp.upenn.edu/" target="_blank" rel="noopener">GRASP Laboratory</a>
+						for the <a href="https://triagechallenge.darpa.mil/" target="_blank" rel="noopener">DARPA Triage Challenge</a>,
+						advancing autonomous robotic search and triage in simulated mass-casualty incidents.
+					</p>
+					<ul>
+						<li>Develop, implement, and evaluate algorithms for robot perception, reasoning, learning, autonomy, and control, integrating them with the lab's multi-robot fleet.</li>
+						<li>Design and run scientific experiments for evaluations.</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="entry">
+				<div class="entry-date">Sep 2024 &ndash; Jul 2025</div>
+				<div class="entry-body">
+					<h3>Meta</h3> <span class="role">&mdash; Machine Learning Engineer</span>
+					<p>
+						WhatsApp. Built ranking, search, and recommendations for the Updates tab
+						(Status &amp; Channels), used by 1.5B+ people daily.
+					</p>
+				</div>
+			</div>
+
+			<div class="entry">
+				<div class="entry-date">Jul 2021 &ndash; Sep 2024</div>
+				<div class="entry-body">
+					<h3>Goldman Sachs</h3> <span class="role">&mdash; Research Engineer, AI Research</span>
+					<p>Associate in the AI Research team within the Data Science and Machine Learning group.</p>
+					<ul>
+						<li>Selected and applied state-of-the-art ML models to real-world NLP problems.</li>
+						<li>Fine-tuned and deployed deep learning models for information extraction &mdash; NER, summarization, and question answering.</li>
+						<li>Researched new ML methods through independent study, experimentation, and internal knowledge-sharing communities.</li>
+						<li>Productionised models and algorithms to improve existing systems and products.</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="entry">
+				<div class="entry-date">Jun 2019 &ndash; Jun 2020</div>
+				<div class="entry-body">
+					<h3>IBM</h3> <span class="role">&mdash; Software Engineer</span>
+					<p>
+						Placement year as an L3 Engineer in cloud and cognitive software, primarily in C++.
+						Achieved a 60&times; speed-up via asynchronous threading for batch message sending,
+						shipped to production with gMock and component tests.
+					</p>
+				</div>
+			</div>
+
+			<div class="entry">
+				<div class="entry-date">Sep 2016 &ndash; Sep 2017</div>
+				<div class="entry-body">
+					<h3>Hertzian</h3> <span class="role">&mdash; Software Developer</span>
+					<p>
+						Full-stack developer at an AI start-up, building back-end data-analysis systems and
+						front-end web apps in Python and JavaScript. Led "Hertzian Health", an NHS project
+						analysing patient feedback across U.K. wards.
 					</p>
 				</div>
 			</div>
 		</div>
-	</div>
-	<!-- End #about -->
+	</section>
 
-	<div id="experience" class="background-alt">
-		<h2 class="heading">Industry Experience</h2>
-		<div id="experience-timeline">
-			<div data-date="September 2024 – July 2025">
-				<h3>Meta</h3>
-				<h4>Machine Learning Engineer</h4>
-				<p>
-					WhatsApp. Built ranking, search, and recommendations for the Updates tab (Status & Channels), used by 1.5B+ people
-					daily
-				</p>
-			</div>
+	<!-- ================= Education ================= -->
+	<section id="education">
+		<div class="wrap">
+			<h2 class="section-title">Education</h2>
 
-			<div data-date="July 2021 – September 2024">
-				<h3>Goldman Sachs</h3>
-				<h4>Machine Learning Engineer</h4>
-				<p>
-					Associate in AI Research team within Data Science and Machine Learning group.
+			<div class="entry">
+				<div class="entry-date"><img class="edu-logo" src="images/upenn-logo.png" alt="University of Pennsylvania" onerror="this.style.display='none'">Aug 2025 &ndash; Present</div>
+				<div class="entry-body">
+					<h3>University of Pennsylvania</h3> <span class="role">&mdash; MSE, Robotics</span>
 					<ul>
-						<li>
-							Experimented & selected appropriate state-of-the-art ML models to solve real-world problems and apply to tasks within NLP systems.
-						</li>
-						<li>
-							Optimised, fine-tuned and implemented deep learning models on information extraction tasks such as NER, Summarization
-							and Question Answering to improve accuracy and efficiency.
-						</li>
-						<li>
-							Researched and identified new ML methods through independent study, experimentation and participation in internal
-							knowledge-sharing communities.
-						</li>
-						<li>
-							Implemented and productionised models and algorithms to improve the performance of existing systems, processes, and
-							products.
-						</li>
+						<li>Concentration in Artificial Intelligence.</li>
+						<li>Thouron Award scholar, Wharton Graduate Rowing Crew, Neurotech@Penn</li>
+						<li>Graduate Research Assistant in the GRASP Lab.</li>
 					</ul>
-				</p>
+				</div>
 			</div>
 
-			<div data-date="June 2019 – June 2020">
-				<h3>IBM</h3>
-				<h4>Software Developer</h4>
-				<p>
-					Placement year as L3 Engineer in cloud and cognitive software primarily working in C++.
+			<div class="entry">
+				<div class="entry-date"><img class="edu-logo" src="images/birmingham-logo.png" alt="University of Birmingham" onerror="this.style.display='none'">Sep 2017 &ndash; Jul 2021</div>
+				<div class="entry-body">
+					<h3>University of Birmingham</h3> <span class="role">&mdash; BSc Artificial Intelligence &amp; Computer Science (Hons, with Industrial Year)</span>
 					<ul>
-						<li>
-							Developed and implemented new features and efficiency improvements to allow increased serviceability.
-						</li>
-						<li>
-							Completed Triages and code fixes (APARs) to resolve production-level issues.
-						</li>
-						<li>
-							Achieved speed improvement of over 60x through implementing asynchronous threading to achieve batch sending of messages.
-							Added to production with gMock and component tests.
-						</li>
+						<li>First-Class Honours, 4.0 GPA, and a first in my dissertation.</li>
+						<li>Notable modules: C/C++, Machine Learning, Computer Vision, Robotics.</li>
 					</ul>
-				</p>
+				</div>
 			</div>
 
-			<div data-date="September 2016 – September 2017">
-				<h3>Hertzian</h3>
-				<h4>Software Developer</h4>
-				<p>
-					 Full-stack developer at AI start-up building back-end systems for data analysis and front-end web applications to display outputs for a range of customers. Primarily worked in Python and JavaScript. 
-					<ul>
-						<li>
-							Front-end development using JavaScript/JQuery, Ajax, Bootstrap, HTML and CSS.
-						</li>
-						<li> 
-							Worked with Python and JSON for data analysis and used frameworks such as Flask and Django for output. 
-						</li>
-						<li> 
-							Managed an NHS project called ‘Hertzian Health’ which analyses patient feedback data from various wards across the U.K.
-							and produces informative outputs on ward performance.
-						</li>
-					</ul>
-				</p>
-				
-			</div>
 		</div>
-	</div>
-	<!-- End #experience -->
+	</section>
 
-	<div id="education">
-		<h2 class="heading">Education</h2>
-		<div class="education-block">
-			<h3>University of Pennsylvania</h3>
-			<span class="education-date">Aug 2025 - Current</span>
-			<h4>MSE Computer and Information Science</h4>
-			<ul>
-				<li>
-					Concentration in Artificial Intelligence
-				</li>
-				<li>
-					Activites: Wharton Graduate Rowing Crew
-				</li>
+	<!-- ================= Skills ================= -->
+	<section id="skills">
+		<div class="wrap">
+			<h2 class="section-title">Technical Skills</h2>
+			<ul class="skills-list">
+				<li>Python</li>
+				<li>C++</li>
+				<li>Machine Learning</li>
+				<li>Deep Learning</li>
+				<li>Reinforcement Learning</li>
+				<li>NLP</li>
+				<li>LLMs</li>
+				<li>PyTorch</li>
+				<li>TensorFlow</li>
+				<li>ROS2</li>
+				<li>MuJoCo</li>
+				<li>NVIDIA Isaac Sim</li>
+				<li>SQL</li>
+				<li>Git</li>
+				<li>Linux</li>
 			</ul>
 		</div>
-		<div class="education-block">
-			<h3>University of Birmingham</h3>
-			<span class="education-date">Sept 2017 - July 2021</span>
-			<h4>BSc Artificial Intelligence and Computer Science Hons (with Industrial Year)</h4>
-			<ul>
-				<li>
-					Achieved a First Class (Hons) with 4.0 GPA and a first in my dissertation.
-				</li>
-				<li>
-					Notable Classes: C/C++ (86%), Machine Learning (87%), Computer Vision (85%), Robotics (77%)
-				</li>
-			</ul>
-		</div>
-		<!-- End .education-block -->
+	</section>
 
-		<div class="education-block">
-			<h3>UCL (University College London)</h3>
-			<span class="education-date">Sept 2020</span>
-			<h4>Quantum Technologies Summer School</h4>
-			<ul>
-				Selected to attend the competitive UCLQ Quantum Tech Summer School covering quantum computing and quantum communication. 
-				Worked hands-on in quantum technologies, including fabricating nanoscale devices and programming current-generation quantum processors. Course fees covered by a grant from EPSRC.
-			</ul>
-		</div>
-		<!-- End .education-block -->
-
-	</div>
-	<!-- End #education -->
-
-	<div id="projects" class="background-alt">
-		<h2 class="heading">Personal Projects</h2>
-		<div class="container">
-			<div class="row">
-
-				<div class="project shadow-large">
-					<div class="project-image" >
-						<img src="images/bn-big.png" style="height: 300px;width: 300px;"/>
-					</div>
-					<!-- End .project-image -->
-					<div class="hackathon-info">
-						<h3>AI to Detect and Track Infectious Disease Outbreaks</h3>
-						<p>
-							I explore how Bayesian networks can be utilised to create an intelligent system that effectively performs biosurveillance of infectious disease outbreaks.
-							By combining the power of machine learning with modern issues involved in safeguarding public health, I share how achieving early, reliable detection can assist medical professionals and government bodies to provide time-critical response and treatment.
-						</p>
-						<a href="https://drive.google.com/open?id=1oj_zr54N-2pTSJBdn_jaBOWXRzBk2vOR" target="_blank">View Poster</a>
-					</div>
-					<!-- End .hackathon-info -->
-				</div>
-				<!-- End .project -->
-
-
-<!-- 				<div class="project shadow-large">
-					<div class="hackathon-info-long" style="padding-top: 15px">
-						<h3 style="font-size: 1.5em;font-weight: 300;color: $heading;margin: 0 0 15px 0;">Bayesian Networks For Predicting Infectious Disease Outbreaks</h3>
-					</div>
-					<div class="project-image">
-						<iframe width="300" height="240" src="https://www.youtube.com/embed/JInL1w2XXNk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-					</div>
-					End .project-image -->
-					
-<!-- 					<div class="hackathon-info" style="margin-top: 15px;">
-						<p>
-							I explore how Bayesian networks can be utilised to create an intelligent system that effectively performs biosurveillance of infectious disease outbreaks.
-							By combining the power of machine learning with modern issues involved in safeguarding public health I will share how achieving early detection can assist medical professionals and government bodies to provide time-critical response and treatment.
-							</br></br>
-							Made in preparation for the 2020 BCSWomen Lovelace Colloquium and presented at IBM. 
-						</p>
-						<a> Poster Available Soon</a>
-					</div> -->
-					<!-- End .hackathon-info -->
-<!-- 				</div> -->
-				<!-- End .project --> 
-
-
-				<div class="project shadow-large">
-					<div class="project-image">
-						<img src="images/ai-emotion-detect.jpg" />
-					</div>
-					<!-- End .project-image -->
-					<div class="hackathon-info">
-						<h3>Marketing Emotion Response Detector</h3>
-						<p>
-							This project aims to classify the emotion on a person's face when viewing advertisement media into one of seven categories, using deep convolutional neural networks. The model is trained on the FER-2013 dataset which consists of 35887 grayscale, 48x48 sized face images with seven emotions - angry, disgusted, fearful, happy, neutral, sad and surprised.
-						</p>
-						<a href="https://github.com/amysen/Marketing-Emotion-Response" target="_blank">View Project</a>
-					</div>
-					<!-- End .hackathon-info -->
-				</div>
-				<!-- End .project -->
-
-				<div class="project shadow-large">
-					<div class="project-image">
-						<img src="images/robot.jpg" />
-					</div>
-					<!-- End .project-image -->
-					<div class="hackathon-info">
-						<h3>Lego Mindstorms EV3 Robot</h3>
-						<p>
-							Using computer vision the EV3 robot will navigate obstacle courses clearly without collisions. Given a location as a goal to reach the robot will detect obstructions in its path and safely clear them by determining a better route.
-						</p>
-					</div>
-					<!-- End .hackathon-info -->
-				</div>
-				<!-- End .project -->
-
-			</div>
-		</div>
-	</div>
-	<!-- End #projects -->
-
-	<div id="skills">
-		<h2 class="heading">Skills</h2>
-		<ul>
-			<li>Python</li>
-			<li>Machine Learning</li>
-			<li>Deep Learning</li>
-			<li>NLP</li>
-			<li>LLMs</li>
-			<li>C++</li>
-			<li>SQL</li>
-			<li>Git</li>
-			<li>Linux</li>
-		</ul>
-	</div>
-	<!-- End #skills -->
-
+	<!-- ================= Footer ================= -->
 	<footer>
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-5 copyright">
-					<p>
-						&copy; <script>document.write(new Date().getFullYear());</script> AMY PAJAK
-					</p>
-				</div>
-				<div class="col-sm-2 top">
-					<span id="to-top">
-						<i class="fa fa-chevron-up" aria-hidden="true"></i>
-					</span>
-				</div>
-				<div class="col-sm-5 social">
-					<ul>
-						<li>
-							<a href="https://github.com/amysen" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
-						</li>
-						<li>
-							<a href="https://www.linkedin.com/in/amypajak/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-						</li>
-						<li>
-							<a href="https://scholar.google.com/citations?user=zDApYJgAAAAJ&hl=en&oi=ao" target="_blank"><img src="images/google-scholar.svg" alt="Google Scholar" class="x-icon"></a>
-						</li>
-						<li>
-							<a href="https://x.com/PajakAmy" target="_blank"><img src="images/x-logo.svg" alt="X" class="x-icon"></a>
-						</li>
-					</ul>
-				</div>
+		<div id="footer-inner">
+			<div class="copyright">
+				&copy; <script>document.write(new Date().getFullYear());</script> Amy Pajak
 			</div>
+			<ul class="social">
+				<li><a href="https://github.com/amysen" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+				<li><a href="https://www.linkedin.com/in/amypajak/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+				<li><a href="https://scholar.google.com/citations?user=zDApYJgAAAAJ&hl=en&oi=ao" target="_blank" rel="noopener" aria-label="Google Scholar"><img src="images/google-scholar.svg" alt="Google Scholar" class="scholar-icon"></a></li>
+				<li><a href="https://x.com/PajakAmy" target="_blank" rel="noopener" aria-label="X"><img src="images/x-logo.svg" alt="X" class="x-icon"></a></li>
+			</ul>
 		</div>
 	</footer>
 	<!-- End footer -->
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-	<script src="libs/typed.min.js" type="text/javascript"></script>
 	<script src="js/scripts.min.js"></script>
+
+	<!-- Collapse the Experience list to the first 3 roles with a Show more toggle -->
 	<script>
-		$('document').ready(function(){
-			var typed = new Typed('#typed',{
-				stringsElement: '#typed-strings',
-				backSpeed: 40,
-				typeSpeed: 40
+		(function () {
+			var sec = document.getElementById('experience');
+			if (!sec) return;
+			var entries = sec.querySelectorAll('.entry');
+			var VISIBLE = 3;
+			if (entries.length <= VISIBLE) return;
+			for (var i = VISIBLE; i < entries.length; i++) {
+				entries[i].classList.add('entry-hidden');
+			}
+			var hidden = entries.length - VISIBLE;
+			var chev = '<i class="fa fa-chevron-down chev" aria-hidden="true"></i>';
+			var btn = document.createElement('button');
+			btn.id = 'exp-toggle';
+			btn.className = 'more-toggle';
+			btn.setAttribute('aria-expanded', 'false');
+			btn.innerHTML = '<span>Show ' + hidden + ' more</span>' + chev;
+			entries[entries.length - 1].parentNode.appendChild(btn);
+			btn.addEventListener('click', function () {
+				var open = sec.classList.toggle('show-all');
+				btn.classList.toggle('is-open', open);
+				btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+				btn.innerHTML = '<span>' + (open ? 'Show less' : 'Show ' + hidden + ' more') + '</span>' + chev;
 			});
-		});
-		
+		})();
+	</script>
+
+	<!-- Force the nav Spot gif to decode from frame 1 on every (even cached) refresh -->
+	<script>
+		(function () {
+			var s = document.getElementById('spot-nav');
+			if (s) s.src = 'images/spot-walk.gif?' + Date.now();
+		})();
+	</script>
+
+	<!-- Cursor-reactive accent: tilt the pink->blue gradient toward the pointer -->
+	<script>
+		(function () {
+			if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+			if (window.matchMedia && window.matchMedia('(hover: none)').matches) return; // skip on touch
+			var root = document.documentElement;
+			var x = 0.5, y = 0.5, ticking = false;
+			function apply() {
+				ticking = false;
+				// keep within a tasteful range so the gradient tilts rather than spins
+				var angle = 135 + (x - 0.5) * 120 + (y - 0.5) * 40;
+				root.style.setProperty('--grad-angle', angle.toFixed(1) + 'deg');
+			}
+			window.addEventListener('mousemove', function (e) {
+				x = e.clientX / window.innerWidth;
+				y = e.clientY / window.innerHeight;
+				if (!ticking) { ticking = true; requestAnimationFrame(apply); }
+			});
+		})();
 	</script>
 
 </body>
