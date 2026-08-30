@@ -44,6 +44,7 @@
 			<ul id="menu">
 				<li><a href="#research">Research</a></li>
 				<li><a href="#publications">Publications</a></li>
+				<li><a href="#projects">Projects</a></li>
 				<li><a href="#experience">Experience</a></li>
 				<li><a href="#education">Education</a></li>
 				<li><a class="no-scroll" href="https://medium.com/@pajakamy" target="_blank" rel="noopener">Blog</a></li>
@@ -144,9 +145,9 @@
 				<li class="pub pub-has-demo">
 					<div class="pub-year">2020</div>
 					<div class="pub-body">
-						<p class="pub-title">&ldquo;Big Data is Watching You&rdquo;: Using AI to Detect and Track Infectious Disease Outbreaks <span class="pub-badge">1st Prize</span></p>
+						<p class="pub-title">&ldquo;Big Data is Watching You&rdquo;: Using AI to Detect and Track Infectious Disease Outbreaks <span class="pub-badge">1st Place</span></p>
 						<p class="pub-authors"><span class="me">A. Pajak</span></p>
-						<p class="pub-venue">Poster &mdash; BCSWomen Lovelace Colloquium 2020, First Prize (sponsored by J.P.&nbsp;Morgan)</p>
+						<p class="pub-venue">Poster &mdash; BCSWomen Lovelace Colloquium 2020, First Place (sponsored by J.P.&nbsp;Morgan)</p>
 						<div class="pub-links">
 							<a href="https://drive.google.com/open?id=1oj_zr54N-2pTSJBdn_jaBOWXRzBk2vOR" target="_blank" rel="noopener">Poster</a>
 							<a href="https://bcswomenlovelace.bcs.org/?page_id=286" target="_blank" rel="noopener">Results</a>
@@ -159,6 +160,47 @@
 			</ul>
 			<p class="pub-note">For the full and most up-to-date list, see my
 				<a href="https://scholar.google.com/citations?user=zDApYJgAAAAJ&hl=en&oi=ao" target="_blank" rel="noopener">Google Scholar profile</a>.</p>
+		</div>
+	</section>
+
+	<!-- ================= Recent projects ================= -->
+	<section id="projects">
+		<div class="wrap">
+			<h2 class="section-title">Recent Projects</h2>
+			<div class="proj-entry">
+				<p class="pub-title">ETH Robotics Summer School 2026 &mdash; Search &amp; Rescue Challenge <span class="pub-badge">1st Place</span></p>
+				<p class="pub-venue">ETH Z&uuml;rich &middot; led by Prof. Marco Hutter and Dr. C&eacute;sar Cadena</p>
+				<p>
+					Selected participant in the <a href="https://robotics-summerschool.ethz.ch/" target="_blank" rel="noopener">ETH Robotics Summer School</a>,
+					focused on deploying autonomous robots in challenging real-world environments &mdash; with lectures in robot
+					perception, state estimation, SLAM, navigation, planning, exploration, and autonomous decision-making,
+					and extensive testing on rough-terrain robotic platforms.
+				</p>
+				<p>
+					For the final challenge, our team developed a fully autonomous mission for a Unitree&nbsp;A2 quadruped to
+					explore an unknown disaster environment and return a report of key observations. Our system integrated
+					mapping, localization, autonomous exploration, path planning, and perception, and placed
+					<strong>1st in the final Search&nbsp;&amp;&nbsp;Rescue challenge</strong>.
+				</p>
+				<div class="proj-media">
+					<figure>
+						<video src="images/unitree_a2.mp4" autoplay muted loop playsinline preload="metadata" aria-label="Unitree A2 quadruped demo"></video>
+						<figcaption>Unitree A2 in the field</figcaption>
+					</figure>
+					<figure>
+						<video src="images/in_maze_faster.mp4" autoplay muted loop playsinline preload="metadata" aria-label="Autonomous maze exploration"></video>
+						<figcaption>Autonomous exploration</figcaption>
+					</figure>
+					<figure>
+						<img src="images/RESPLE.png" alt="LiDAR mapping and state estimation" loading="lazy">
+						<figcaption>Mapping &amp; state estimation</figcaption>
+					</figure>
+					<figure>
+						<img class="proj-doc" src="images/eth_cert.jpeg" alt="ETH Robotics Summer School certificate" loading="lazy">
+						<figcaption>Certificate</figcaption>
+					</figure>
+				</div>
+			</div>
 		</div>
 	</section>
 
@@ -332,6 +374,53 @@
 				btn.classList.toggle('is-open', open);
 				btn.setAttribute('aria-expanded', open ? 'true' : 'false');
 				btn.innerHTML = '<span>' + (open ? 'Show less' : 'Show ' + hidden + ' more') + '</span>' + chev;
+			});
+		})();
+	</script>
+
+	<!-- In-page lightbox for project media -->
+	<div class="media-lightbox" id="media-lightbox" aria-hidden="true">
+		<span class="media-lightbox-close" aria-label="Close">&times;</span>
+	</div>
+	<script>
+		(function () {
+			var box = document.getElementById('media-lightbox');
+			if (!box) return;
+			function close() {
+				box.classList.remove('active');
+				var v = box.querySelector('video');
+				if (v) v.pause();
+				box.querySelectorAll('img, video').forEach(function (m) { m.remove(); });
+			}
+			document.querySelectorAll('.proj-media figure').forEach(function (fig) {
+				fig.addEventListener('click', function () {
+					close();
+					var src = fig.querySelector('video, img');
+					if (!src) return;
+					var big;
+					if (src.tagName === 'VIDEO') {
+						big = document.createElement('video');
+						big.src = src.getAttribute('src');
+						big.controls = true;
+						big.autoplay = true;
+						big.muted = true;
+						big.loop = true;
+						big.playsInline = true;
+					} else {
+						big = document.createElement('img');
+						big.src = src.getAttribute('src');
+						big.alt = src.alt || '';
+					}
+					box.appendChild(big);
+					box.classList.add('active');
+				});
+			});
+			box.addEventListener('click', function (e) {
+				// let clicks on the video controls through
+				if (e.target.tagName !== 'VIDEO') close();
+			});
+			document.addEventListener('keydown', function (e) {
+				if (e.key === 'Escape') close();
 			});
 		})();
 	</script>
