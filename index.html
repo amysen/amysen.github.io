@@ -13,7 +13,7 @@
 	<meta property="og:title" content="Amy Pajak - Researcher, University of Pennsylvania">
 	<meta property="og:description" content="Master's student and researcher at the University of Pennsylvania. Research in continual/lifelong learning and embodied AI. Previously at Meta (WhatsApp) and Goldman Sachs.">
 	<meta property="og:url" content="https://amypajak.com">
-	<meta property="og:image" content="https://amypajak.com/images/me_spot.JPG">
+	<meta property="og:image" content="https://amypajak.com/images/site/me_spot.JPG">
 	<meta name="twitter:card" content="summary_large_image">
 
 	<title>Amy Pajak</title>
@@ -35,7 +35,7 @@
 		<div id="nav-inner">
 			<div id="nav-left">
 				<!-- Spot walks on the spot, facing right into the name, then fades away -->
-				<img id="spot-nav" src="images/spot-walk.gif" alt="" aria-hidden="true">
+				<img id="spot-nav" src="images/site/spot-walk.gif" alt="" aria-hidden="true">
 				<a id="nav-name" href="#lead">Amy Pajak</a>
 			</div>
 			<div id="mobile-menu-close">
@@ -58,7 +58,7 @@
 	<div id="lead">
 		<div id="lead-inner" class="wrap">
 			<div id="lead-photo-frame">
-				<img id="lead-photo" src="images/me_spot.JPG" alt="Amy Pajak">
+				<img id="lead-photo" src="images/site/me_spot.JPG" alt="Amy Pajak">
 			</div>
 			<div id="lead-text">
 				<h1>Amy Pajak</h1>
@@ -80,10 +80,10 @@
 				</p>
 				<div class="lead-links">
 					<a href="https://drive.google.com/file/d/1Jq7Do_N8d0Dvvgw_URu9VO4KGo8CeJa6/view?usp=sharing" target="_blank" rel="noopener"><i class="fa fa-file-text-o" aria-hidden="true"></i> CV</a>
-					<a href="https://scholar.google.com/citations?user=zDApYJgAAAAJ&hl=en&oi=ao" target="_blank" rel="noopener"><img src="images/google-scholar.svg" alt="" class="scholar-icon"> Scholar</a>
+					<a href="https://scholar.google.com/citations?user=zDApYJgAAAAJ&hl=en&oi=ao" target="_blank" rel="noopener"><img src="images/site/google-scholar.svg" alt="" class="scholar-icon"> Scholar</a>
 					<a href="https://github.com/amysen" target="_blank" rel="noopener"><i class="fa fa-github" aria-hidden="true"></i> GitHub</a>
 					<a href="https://www.linkedin.com/in/amypajak/" target="_blank" rel="noopener"><i class="fa fa-linkedin" aria-hidden="true"></i> LinkedIn</a>
-					<a href="https://x.com/PajakAmy" target="_blank" rel="noopener"><img src="images/x-logo.svg" alt="" class="x-icon"> </a>
+					<a href="https://x.com/PajakAmy" target="_blank" rel="noopener"><img src="images/site/x-logo.svg" alt="" class="x-icon"> </a>
 				</div>
 			</div>
 		</div>
@@ -125,7 +125,7 @@
 						</div>
 					</div>
 					<div class="pub-demo-wrap">
-						<video class="pub-demo" src="images/dynamic.mp4" autoplay muted loop playsinline preload="metadata" aria-label="Demo from the paper"></video>
+						<video class="pub-demo" src="images/publications/artifacts-memory/dynamic.mp4" autoplay muted loop playsinline preload="metadata" aria-label="Demo from the paper"></video>
 					</div>
 				</li>
 				<li class="pub pub-has-demo">
@@ -139,7 +139,7 @@
 						</div>
 					</div>
 					<a class="pub-fig" href="https://patents.google.com/patent/US12242468B1/en" target="_blank" rel="noopener" aria-label="View patent">
-						<img src="images/US12242468-20250304-D00000.png" alt="Patent figure: reconfigurable sequence of rankers pipeline" loading="lazy">
+						<img src="images/publications/ranker-patent/US12242468-20250304-D00000.png" alt="Patent figure: reconfigurable sequence of rankers pipeline" loading="lazy">
 					</a>
 				</li>
 				<li class="pub pub-has-demo">
@@ -154,7 +154,7 @@
 						</div>
 					</div>
 					<a class="pub-fig" href="https://drive.google.com/open?id=1oj_zr54N-2pTSJBdn_jaBOWXRzBk2vOR" target="_blank" rel="noopener" aria-label="View poster">
-						<img src="images/bn-big.png" alt="Bayesian network for infectious-disease biosurveillance" loading="lazy">
+						<img src="images/publications/big-data-watching-you/bn-big.png" alt="Bayesian network for infectious-disease biosurveillance" loading="lazy">
 					</a>
 				</li>
 			</ul>
@@ -167,6 +167,42 @@
 	<section id="projects">
 		<div class="wrap">
 			<h2 class="section-title">Recent Projects</h2>
+			<div class="proj-entry">
+				<p class="pub-title">RoboRacer Autonomous Racing <span class="pub-badge">In Progress</span></p>
+				<p class="pub-venue">University of Pennsylvania &middot; ESE&nbsp;6150</p>
+				<p>
+					Building a 1/10-scale autonomous race car and its ROS&nbsp;2 autonomy stack, from low-level vehicle
+					control through localization, planning, and high-speed autonomous racing on the
+					<a href="https://roboracer.ai/" target="_blank" rel="noopener">RoboRacer</a> platform. Implemented
+					LiDAR-based perception and localization, autonomous wall following, SLAM, Pure Pursuit, motion planning,
+					and model-predictive control, with algorithms tested first in simulation and then deployed to the
+					physical car.
+				</p>
+				<p>
+					Currently developing racing algorithms for progressively more challenging head-to-head competitions,
+					with a final project to follow.
+					<!-- TODO: once decided, describe the final-project topic here -->
+				</p>
+				<ul class="proj-tags" aria-label="Technologies">
+					<li>ROS 2</li>
+					<li>C++</li>
+					<li>Python</li>
+					<li>LiDAR</li>
+					<li>SLAM</li>
+					<li>Foxglove</li>
+					<li>Autonomous Racing</li>
+				</ul>
+				<div class="proj-media cols-2">
+					<figure>
+						<video src="images/projects/roboracer/real_levine.mp4" autoplay muted loop playsinline preload="metadata" aria-label="RoboRacer car driving autonomously around the Levine Hall track"></video>
+						<figcaption>Autonomous laps in Levine Hall</figcaption>
+					</figure>
+					<figure>
+						<video src="images/projects/roboracer/foxglove_waypoints.mp4" autoplay muted loop playsinline preload="metadata" aria-label="Foxglove visualisation of waypoint tracking with speed and steering plots"></video>
+						<figcaption>Waypoint tracking in simulation</figcaption>
+					</figure>
+				</div>
+			</div>
 			<div class="proj-entry">
 				<p class="pub-title">ETH Robotics Summer School 2026 &mdash; Search &amp; Rescue Challenge <span class="pub-badge">1st Place</span></p>
 				<p class="pub-venue">ETH Z&uuml;rich &middot; led by Prof. Marco Hutter and Dr. C&eacute;sar Cadena</p>
@@ -184,19 +220,19 @@
 				</p>
 				<div class="proj-media">
 					<figure>
-						<video src="images/unitree_a2.mp4" autoplay muted loop playsinline preload="metadata" aria-label="Unitree A2 quadruped demo"></video>
+						<video src="images/projects/eth-robotics-summer-school/unitree_a2.mp4" autoplay muted loop playsinline preload="metadata" aria-label="Unitree A2 quadruped demo"></video>
 						<figcaption>Unitree A2 in the field</figcaption>
 					</figure>
 					<figure>
-						<video src="images/in_maze_faster.mp4" autoplay muted loop playsinline preload="metadata" aria-label="Autonomous maze exploration"></video>
+						<video src="images/projects/eth-robotics-summer-school/in_maze_faster.mp4" autoplay muted loop playsinline preload="metadata" aria-label="Autonomous maze exploration"></video>
 						<figcaption>Autonomous exploration</figcaption>
 					</figure>
 					<figure>
-						<img src="images/RESPLE.png" alt="LiDAR mapping and state estimation" loading="lazy">
+						<img src="images/projects/eth-robotics-summer-school/RESPLE.png" alt="LiDAR mapping and state estimation" loading="lazy">
 						<figcaption>Mapping &amp; state estimation</figcaption>
 					</figure>
 					<figure>
-						<img class="proj-doc" src="images/eth_cert.jpeg" alt="ETH Robotics Summer School certificate" loading="lazy">
+						<img class="proj-doc" src="images/projects/eth-robotics-summer-school/eth_cert.jpeg" alt="ETH Robotics Summer School certificate" loading="lazy">
 						<figcaption>Certificate</figcaption>
 					</figure>
 				</div>
@@ -282,7 +318,7 @@
 			<h2 class="section-title">Education</h2>
 
 			<div class="entry">
-				<div class="entry-date"><img class="edu-logo" src="images/upenn-logo.png" alt="University of Pennsylvania" onerror="this.style.display='none'">Aug 2025 &ndash; Present</div>
+				<div class="entry-date"><img class="edu-logo" src="images/site/upenn-logo.png" alt="University of Pennsylvania" onerror="this.style.display='none'">Aug 2025 &ndash; Present</div>
 				<div class="entry-body">
 					<h3>University of Pennsylvania</h3> <span class="role">&mdash; MSE, Robotics</span>
 					<ul>
@@ -294,7 +330,7 @@
 			</div>
 
 			<div class="entry">
-				<div class="entry-date"><img class="edu-logo" src="images/birmingham-logo.png" alt="University of Birmingham" onerror="this.style.display='none'">Sep 2017 &ndash; Jul 2021</div>
+				<div class="entry-date"><img class="edu-logo" src="images/site/birmingham-logo.png" alt="University of Birmingham" onerror="this.style.display='none'">Sep 2017 &ndash; Jul 2021</div>
 				<div class="entry-body">
 					<h3>University of Birmingham</h3> <span class="role">&mdash; BSc Artificial Intelligence &amp; Computer Science (Hons, with Industrial Year)</span>
 					<ul>
@@ -340,8 +376,8 @@
 			<ul class="social">
 				<li><a href="https://github.com/amysen" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa fa-github" aria-hidden="true"></i></a></li>
 				<li><a href="https://www.linkedin.com/in/amypajak/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-				<li><a href="https://scholar.google.com/citations?user=zDApYJgAAAAJ&hl=en&oi=ao" target="_blank" rel="noopener" aria-label="Google Scholar"><img src="images/google-scholar.svg" alt="Google Scholar" class="scholar-icon"></a></li>
-				<li><a href="https://x.com/PajakAmy" target="_blank" rel="noopener" aria-label="X"><img src="images/x-logo.svg" alt="X" class="x-icon"></a></li>
+				<li><a href="https://scholar.google.com/citations?user=zDApYJgAAAAJ&hl=en&oi=ao" target="_blank" rel="noopener" aria-label="Google Scholar"><img src="images/site/google-scholar.svg" alt="Google Scholar" class="scholar-icon"></a></li>
+				<li><a href="https://x.com/PajakAmy" target="_blank" rel="noopener" aria-label="X"><img src="images/site/x-logo.svg" alt="X" class="x-icon"></a></li>
 			</ul>
 		</div>
 	</footer>
@@ -429,7 +465,7 @@
 	<script>
 		(function () {
 			var s = document.getElementById('spot-nav');
-			if (s) s.src = 'images/spot-walk.gif?' + Date.now();
+			if (s) s.src = 'images/site/spot-walk.gif?' + Date.now();
 		})();
 	</script>
 

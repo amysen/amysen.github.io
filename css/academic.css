@@ -365,6 +365,21 @@ header {
 .proj-entry p { color: var(--muted); margin: 0 0 14px 0; }
 .proj-entry .pub-title { font-size: 1.1em; color: var(--text); margin-bottom: 4px; }
 .proj-entry .pub-venue { margin-bottom: 12px; }
+/* separate stacked project entries */
+.proj-entry + .proj-entry { margin-top: 30px; padding-top: 30px; border-top: 1px solid var(--border); }
+/* compact tech-stack chips under a project description */
+.proj-tags { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 10px 25px; justify-content: center; }
+.proj-tags + .proj-media { margin-top: 16px; }
+.proj-tags li {
+	padding: 3px 11px;
+	background: var(--grey-50);
+	border: 1px solid var(--border);
+	border-radius: 20px;
+	font-size: 0.8em;
+	font-weight: 500;
+	line-height: 1.5;
+	color: var(--muted);
+}
 .proj-media {
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
@@ -383,6 +398,10 @@ header {
 	background: var(--grey-100);
 }
 .proj-media img.proj-doc { object-fit: contain; background: #fff; padding: 6px; }
+/* rows with only two items: fill the width at a larger size instead of leaving half the row empty */
+.proj-media.cols-2 { grid-template-columns: repeat(2, 1fr); }
+.proj-media.cols-2 video,
+.proj-media.cols-2 img { height: 180px; }
 .proj-media a { display: block; }
 .proj-media a:hover video, .proj-media a:hover img { box-shadow: 0 4px 14px rgba(31, 35, 40, 0.12); }
 .proj-media figcaption {
@@ -792,6 +811,8 @@ footer::before {
 	.pub-demo { width: 230px; }
 	.proj-media { grid-template-columns: 1fr 1fr; gap: 12px; }
 	.proj-media video, .proj-media img { height: 130px; }
+	.proj-media.cols-2 { grid-template-columns: 1fr; }
+	.proj-media.cols-2 video, .proj-media.cols-2 img { height: 200px; }
 }
 
 /* hide the mobile-close button on desktop entirely */
